@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Detection</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Fire Detection with YOLO</h1>
+        <div id="model-info">Current Model: YOLO8n</div>
+        <button id="toggle-model">Switch Model</button>
+    </header>
+    <main>
+        <div class="video-container">
+            <h2>Live Camera</h2>
+            <img id="live-video" src="/video_feed" alt="Live Camera Feed">
+        </div>
+        <div class="video-container">
+            <h2>Prediction</h2>
+            <img id="prediction-video" src="/video_prediction" alt="Prediction Feed">
+        </div>
+    </main>
+    <script src="static/script.js"></script>
+</body>
+</html>
